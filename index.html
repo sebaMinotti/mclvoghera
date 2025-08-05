@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MCL Interface</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="font2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="img/icon-512.png" />
+  <link rel="manifest" href="manifest.json" />
+  
+</head>
+<body>
+  <div id="root">
+    <div class="container-fluid">
+      <header>
+        <div id="logo">
+          <img src="img/mcl.jpeg" alt="logo mcl voghera" />
+        </div>
+        <div class="mcl">
+          <h1>MCL VOGHERA</h1>
+          <span>Circolo Giovanni XXIII</span>
+        </div>
+      </header>
+      <div id="menu">
+        <ul>          
+          <li><a href="#" @click.prevent="showPage('Home')">Home</a></li>
+          <li><a href="#" @click.prevent="showPage('Prezzi')">Prezzi</a></li>
+          <li><a href="#" @click.prevent="showPage('Contatti')">Contatti</a></li>
+          <li><a href="#" @click.prevent="showPage('Bacheca')">Bacheca</a></li>
+          <li><a href="#" @click.prevent="showPage('Orari')">Orari</a></li>
+          <li><a href="#" @click.prevent="showPage('Servizi')">Servizi</a></li>
+
+        </ul>
+      </div>
+            <div v-if="currentPage === 'Home'" class="page">
+        <h3>MCL VOGHERA</h3>
+
+        <div style="padding: 10px;overflow: auto;height: 460px!important; " class="up scheda">
+          <h1>Benvenuti al Circolo Giovanni XXIII</h1>
+          <p style="font-size: 16px;">
+            MCL Voghera | Piazza Duomo 70, 27058 Voghera (PV)
+
+              Il Circolo MCL Giovanni XXIII di Voghera, parte attiva del Movimento Cristiano Lavoratori, opera da anni con sede in Piazza Duomo 70. È un punto di riferimento nel nostro territorio: offre spazi ricreativi, servizio bar, assistenza CAF e Patronato, attività culturali, turistico‑ricreative e occasioni di convivialità sociale per la comunità locale.
+               La piattaforma che stai esplorando intende riflettere lo spirito accogliente del Circolo: qui potrai scoprire orari, eventi, servizi e restare aggiornato sulle attività rivolte ai soci. Un luogo virtuale che ambisce a promuovere solidarietà, cultura e partecipazione, in linea con i valori cristiani e sociali del MCL Voghera.
+          </p>
+        </div>
+        <div class="down scheda"></div>
+      </div>
+
+      <div v-if="currentPage === 'Contatti'" class="page">
+        <h2>CONTATTI</h2>
+        <p>Qui puoi trovare tutte le informazioni sui prezzi.</p>
+        <div class="up scheda contatti">
+          <div class="contact">
+            <h5>Sito Web</h5>
+            <span>
+                  <a href="https://www.mclvoghera.it" 
+   target="_blank" 
+   role="button"
+   style="display:inline-flex; align-items:center; gap:8px; padding:8px; background-color:#007bff; color:#fff; border:none; border-radius:5px; text-decoration:none; font-size:1rem;width: 180px;">
+  <i style="font-size: 1rem; color: rgb(255, 255, 255);" class="fa-solid fa-globe"></i>
+  Visita il sito web
+</a>
+            </span>
+          </div>
+          <div class="contact">
+            <h5>Telefono</h5>
+            <span>
+              <span style="font-size: 1.1rem;">
+               <a href="tel:038342980" 
+   role="button"
+   style="display:inline-block; padding:8px; background-color:#007bff; color:#fff; border:none; border-radius:5px; text-decoration:none;margin-left: 0!important;width: 180px;">
+  <i style="font-size: 1rem; color: rgb(255, 255, 255);" class="fa-solid fa-phone-volume"></i> 0383-42980
+</a>
+              </span>
+            </span>
+          </div>
+          <div class="contact">
+            <h5>Indirizzo</h5>
+            <span>
+              <span style="font-size: 1.1rem;">Piazza Duomo 70 27058 Voghera PV</span>
+                <a href="https://www.google.com/maps?q=Piazza+Duomo+70,+27058+Voghera+PV" 
+                  target="_blank" 
+                  role="button"
+                  style="display:inline-block; padding:8px; background-color:#007bff; color:#fff; border:none; border-radius:5px; text-decoration:none;width: 180px;">
+                  <i style="font-size: 1rem; color: rgb(255, 255, 255);" class="fa-solid fa-location-dot"></i> Apri in Google Maps
+                </a>
+            </span>
+          </div>
+        </div>
+        <div class="down scheda"></div>
+      </div>
+
+      <div v-if="currentPage === 'Prezzi'" class="page">
+        <h2>Prezzi</h2>
+        <p>Qui puoi trovare tutte le informazioni sui prezzi.</p>
+        <div class="up scheda"></div>
+        <div class="down scheda"></div>
+      </div>
+
+      <div v-if="currentPage === 'Bacheca'" class="page">
+        <h2>BACHECA</h2>
+        <p>Qui puoi trovare tutte le informazioni sui prezzi.</p>
+        <div style="overflow: auto;padding: 5px; height: 350px;" class="up scheda">
+              <div v-for="evento in eventi" class="evento">
+                <h4 style="font-size: 18px;">{{evento.titolo}}</h4>
+                <p style="font-size: 14px;">
+                  {{evento.descrizione}} 
+                </p>
+                   <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(evento.url)"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="btn btn-primary"
+     style="margin-top: 5px;">
+    <i class="fab fa-facebook-square"></i> Condividi su Facebook
+  </a>
+
+              </div>
+        </div>
+        <div style="padding: 5px;" class="down scheda">
+          <p>
+            Gli eventi potrebbero subire variazioni che non dipendono da noi o dalla nostra organizzazione 
+          </p>
+        </div>
+      </div>
+
+      <div v-if="currentPage === 'Orari'" class="page">
+        <h2 style="color: royalblue;">ORARI</h2>
+        <p>Qui puoi trovare tutte le informazioni su orari e giorni di chiusura.</p>
+        <div class="up scheda orari">
+          <ul>
+            <li v-for="orario in orari" :key="orario.id" style="position: relative;">
+              <span style="position: absolute; left: 0; color: red;">{{ orario.giorno }}</span>
+              <span style="position: absolute; right: 2px;">{{ orario.Mattino + '  ' + orario.pomeriggio }}</span>
+            </li>
+          </ul>
+        </div>
+        <div style="padding: 5px 15px;" class="down scheda">
+          <p>
+            Gli orari potrebbero subire variazioni! in tal caso verranno comunicati su questa piattaforma
+          </p>
+        </div>
+      </div>
+
+      <div v-if="currentPage === 'Servizi'" class="page">
+        <h2>SERVIZI</h2>
+        <p>Qui puoi trovare tutte le informazioni sui prezzi.</p>
+        <div class="up scheda"></div>
+        <div class="down scheda"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Vue.js global build -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <!-- Firebase compat libraries global -->
+
+
+  <!-- Main JS -->
+  <script src="main.js"></script>
+</body>
+</html>
