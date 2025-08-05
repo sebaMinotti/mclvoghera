@@ -65,7 +65,8 @@ header  h1{
   
 }
 #menu ul li a:focus{
-    color: yellow;text-decoration: underline;
+    color: rgb(247, 155, 63);text-decoration: underline;
+    
 }
 .page{
     width: 99%;
@@ -120,6 +121,7 @@ header  h1{
     margin: 10px 0px;
     padding: 5px;
 }
+
 
 @media screen and ( max-width:468px) {
     .orari ul li{
