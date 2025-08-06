@@ -46,6 +46,9 @@
       </div>
             <div v-if="currentPage === 'Home'" class="page">
         <h3>MCL VOGHERA</h3>
+        <div style="width: 98%;height: 300px;background-color: red;" class="boxImage">
+          <img src="" alt="">
+        </div>
 
         <div style="padding: 10px;overflow: auto;height: 460px!important; " class="up scheda">
           <h1>Benvenuti al Circolo Giovanni XXIII</h1>
@@ -119,12 +122,10 @@
                 <p style="font-size: 14px;">
                   {{evento.descrizione}} 
                 </p>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://sebaminotti.github.io/mclvoghera/#tab1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style="display: inline-block; padding: 10px 15px; background-color: #1877f2; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">
-                      📤 Condividi su Facebook
-                    </a>
+                  <button @click="condividiFacebook(evento)"
+                     style="display: inline-block; padding: 10px 15px; background-color: #1877f2; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">
+                    📤 Condividi su Facebook
+                  </button>
 
               </div>
         </div>
