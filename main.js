@@ -28,7 +28,7 @@ const root = Vue.createApp({
         showPage(page) {
             this.currentPage = page;
         },
-              condividiFacebook(evento) {
+                condividiFacebook(evento) {
             const titolo = evento.titolo;
             const descrizione = evento.descrizione;
             
@@ -40,11 +40,21 @@ ${descrizione}
 📍 MCL Voghera - Circolo Giovanni XXIII
 📞 Per info: 0383-42980`;
             
-            // URL di condivisione Facebook - condivide solo il testo senza link
-            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?quote=${encodeURIComponent(testoEvento)}`;
-            
-            // Apre il popup di condivisione
-            window.open(facebookUrl, 'facebook-share', 'width=600,height=400,scrollbars=yes,resizable=yes');
+            // Copia il testo negli appunti e avvisa l'utente
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(testoEvento).then(() => {
+                    alert('📋 Testo dell\'evento copiato negli appunti!\n\nOra puoi incollarlo direttamente in un post Facebook.');
+                });
+            } else {
+                // Fallback per browser più vecchi
+                const textArea = document.createElement('textarea');
+                textArea.value = testoEvento;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('📋 Testo dell\'evento copiato negli appunti!\n\nOra puoi incollarlo direttamente in un post Facebook.');
+            }
         }
     }
 });
