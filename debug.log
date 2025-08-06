@@ -1,0 +1,301 @@
+2025-08-06 07:54:20 - Avvio script
+2025-08-06 07:54:20 - Errore connessione DB: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2025-08-06 07:54:20 - Errore fatale: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2025-08-06 07:56:56 - Avvio script
+2025-08-06 07:56:56 - Errore connessione DB: SQLSTATE[HY000] [1049] Unknown database 'mcl_voghera'
+2025-08-06 07:56:56 - Database creato
+2025-08-06 07:56:56 - Creazione tabelle
+2025-08-06 07:56:56 - Password hash: $2y$10$7qrwyGyyp6pmAzz2c16nfespAymfcxdwuccuFnbKYZ/uY/Ix9YSMe
+2025-08-06 07:56:56 - Inserimento admin: OK
+2025-08-06 07:56:56 - Admin trovato: SI
+2025-08-06 07:56:56 - Tabelle esistono
+2025-08-06 07:56:56 - Azione richiesta: check_auth
+2025-08-06 07:56:56 - Check auth: NOT LOGGED
+2025-08-06 07:56:56 - Avvio script
+2025-08-06 07:56:56 - Connessione DB OK
+2025-08-06 07:56:56 - Tabelle esistono
+2025-08-06 07:56:56 - Azione richiesta: get_eventi
+2025-08-06 07:56:56 - Avvio script
+2025-08-06 07:56:56 - Connessione DB OK
+2025-08-06 07:56:56 - Tabelle esistono
+2025-08-06 07:56:56 - Azione richiesta: get_eventi
+2025-08-06 07:57:04 - Avvio script
+2025-08-06 07:57:04 - Connessione DB OK
+2025-08-06 07:57:05 - Tabelle esistono
+2025-08-06 07:57:05 - Azione richiesta: login
+2025-08-06 07:57:05 - Processo di login
+2025-08-06 07:57:05 - Raw input: {"username":"root","password":"root"}
+2025-08-06 07:57:05 - Input decodificato: Array
+(
+    [username] => root
+    [password] => root
+)
+
+2025-08-06 07:57:05 - Username: 'root', Password: 'root'
+2025-08-06 07:57:05 - Utente dal DB: 
+2025-08-06 07:57:05 - Utente non trovato
+2025-08-06 07:57:13 - Avvio script
+2025-08-06 07:57:13 - Connessione DB OK
+2025-08-06 07:57:13 - Tabelle esistono
+2025-08-06 07:57:13 - Azione richiesta: login
+2025-08-06 07:57:13 - Processo di login
+2025-08-06 07:57:13 - Raw input: {"username":"admin","password":"root"}
+2025-08-06 07:57:13 - Input decodificato: Array
+(
+    [username] => admin
+    [password] => root
+)
+
+2025-08-06 07:57:13 - Username: 'admin', Password: 'root'
+2025-08-06 07:57:13 - Utente dal DB: Array
+(
+    [id] => 1
+    [username] => admin
+    [password] => $2y$10$7qrwyGyyp6pmAzz2c16nfespAymfcxdwuccuFnbKYZ/uY/Ix9YSMe
+)
+
+2025-08-06 07:57:13 - Password check: FAIL
+2025-08-06 07:57:13 - Password sbagliata
+2025-08-06 07:57:19 - Avvio script
+2025-08-06 07:57:19 - Connessione DB OK
+2025-08-06 07:57:19 - Tabelle esistono
+2025-08-06 07:57:19 - Azione richiesta: login
+2025-08-06 07:57:19 - Processo di login
+2025-08-06 07:57:19 - Raw input: {"username":"admin","password":"mcl2025"}
+2025-08-06 07:57:19 - Input decodificato: Array
+(
+    [username] => admin
+    [password] => mcl2025
+)
+
+2025-08-06 07:57:19 - Username: 'admin', Password: 'mcl2025'
+2025-08-06 07:57:19 - Utente dal DB: Array
+(
+    [id] => 1
+    [username] => admin
+    [password] => $2y$10$7qrwyGyyp6pmAzz2c16nfespAymfcxdwuccuFnbKYZ/uY/Ix9YSMe
+)
+
+2025-08-06 07:57:19 - Password check: OK
+2025-08-06 07:57:19 - Login OK
+2025-08-06 07:57:41 - Avvio script
+2025-08-06 07:57:41 - Connessione DB OK
+2025-08-06 07:57:41 - Tabelle esistono
+2025-08-06 07:57:41 - Azione richiesta: add_evento
+2025-08-06 07:57:44 - Avvio script
+2025-08-06 07:57:44 - Connessione DB OK
+2025-08-06 07:57:44 - Tabelle esistono
+2025-08-06 07:57:44 - Azione richiesta: add_evento
+2025-08-06 07:57:48 - Avvio script
+2025-08-06 07:57:48 - Connessione DB OK
+2025-08-06 07:57:48 - Tabelle esistono
+2025-08-06 07:57:48 - Azione richiesta: check_auth
+2025-08-06 07:57:48 - Check auth: LOGGED IN
+2025-08-06 07:57:48 - Avvio script
+2025-08-06 07:57:48 - Connessione DB OK
+2025-08-06 07:57:48 - Tabelle esistono
+2025-08-06 07:57:48 - Azione richiesta: get_eventi
+2025-08-06 07:57:50 - Avvio script
+2025-08-06 07:57:50 - Connessione DB OK
+2025-08-06 07:57:50 - Tabelle esistono
+2025-08-06 07:57:50 - Azione richiesta: get_eventi
+2025-08-06 07:58:05 - Avvio script
+2025-08-06 07:58:05 - Connessione DB OK
+2025-08-06 07:58:05 - Tabelle esistono
+2025-08-06 07:58:05 - Azione richiesta: add_evento
+2025-08-06 08:00:44 - Avvio script
+2025-08-06 08:00:44 - Errore connessione DB: SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)
+2025-08-06 08:00:44 - Errore fatale: SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)
+2025-08-06 08:01:40 - Avvio script
+2025-08-06 08:01:40 - Connessione DB OK
+2025-08-06 08:01:40 - Tabelle esistono
+2025-08-06 08:01:40 - Azione richiesta: check_auth
+2025-08-06 08:01:40 - Check auth: NOT LOGGED
+2025-08-06 08:01:40 - Avvio script
+2025-08-06 08:01:40 - Connessione DB OK
+2025-08-06 08:01:40 - Tabelle esistono
+2025-08-06 08:01:40 - Azione richiesta: get_eventi
+2025-08-06 08:01:42 - Avvio script
+2025-08-06 08:01:42 - Connessione DB OK
+2025-08-06 08:01:42 - Tabelle esistono
+2025-08-06 08:01:42 - Azione richiesta: get_eventi
+2025-08-06 08:01:49 - Avvio script
+2025-08-06 08:01:49 - Connessione DB OK
+2025-08-06 08:01:49 - Tabelle esistono
+2025-08-06 08:01:49 - Azione richiesta: login
+2025-08-06 08:01:49 - Processo di login
+2025-08-06 08:01:49 - Raw input: {"username":"root","password":"root"}
+2025-08-06 08:01:49 - Input decodificato: Array
+(
+    [username] => root
+    [password] => root
+)
+
+2025-08-06 08:01:49 - Username: 'root', Password: 'root'
+2025-08-06 08:01:49 - Utente dal DB: 
+2025-08-06 08:01:49 - Utente non trovato
+2025-08-06 08:01:59 - Avvio script
+2025-08-06 08:01:59 - Connessione DB OK
+2025-08-06 08:01:59 - Tabelle esistono
+2025-08-06 08:01:59 - Azione richiesta: login
+2025-08-06 08:01:59 - Processo di login
+2025-08-06 08:01:59 - Raw input: {"username":"admin","password":"mcl2025"}
+2025-08-06 08:01:59 - Input decodificato: Array
+(
+    [username] => admin
+    [password] => mcl2025
+)
+
+2025-08-06 08:01:59 - Username: 'admin', Password: 'mcl2025'
+2025-08-06 08:01:59 - Utente dal DB: Array
+(
+    [id] => 1
+    [username] => admin
+    [password] => $2y$10$7qrwyGyyp6pmAzz2c16nfespAymfcxdwuccuFnbKYZ/uY/Ix9YSMe
+)
+
+2025-08-06 08:01:59 - Password check: OK
+2025-08-06 08:01:59 - Login OK
+2025-08-06 08:02:08 - Avvio script
+2025-08-06 08:02:08 - Connessione DB OK
+2025-08-06 08:02:08 - Tabelle esistono
+2025-08-06 08:02:08 - Azione richiesta: add_evento
+2025-08-06 08:02:41 - Avvio script
+2025-08-06 08:02:41 - Connessione DB OK
+2025-08-06 08:02:41 - Tabelle esistono
+2025-08-06 08:02:41 - Azione richiesta: add_evento
+2025-08-06 08:12:13 - Avvio script
+2025-08-06 08:12:13 - Connessione DB OK
+2025-08-06 08:12:13 - Tabelle esistono
+2025-08-06 08:12:13 - Azione richiesta: test_db
+2025-08-06 08:14:28 - Avvio script
+2025-08-06 08:14:28 - Connessione DB OK
+2025-08-06 08:14:28 - Tabelle esistono
+2025-08-06 08:14:28 - Azione richiesta: check_auth
+2025-08-06 08:14:28 - Check auth: NOT LOGGED
+2025-08-06 08:14:28 - Avvio script
+2025-08-06 08:14:28 - Connessione DB OK
+2025-08-06 08:14:28 - Tabelle esistono
+2025-08-06 08:14:28 - Azione richiesta: get_eventi
+2025-08-06 08:14:29 - Avvio script
+2025-08-06 08:14:29 - Connessione DB OK
+2025-08-06 08:14:29 - Tabelle esistono
+2025-08-06 08:14:29 - Azione richiesta: get_eventi
+2025-08-06 08:14:35 - Avvio script
+2025-08-06 08:14:35 - Connessione DB OK
+2025-08-06 08:14:35 - Tabelle esistono
+2025-08-06 08:14:35 - Azione richiesta: login
+2025-08-06 08:14:35 - Processo di login
+2025-08-06 08:14:35 - Raw input: {"username":"admin","password":"mcl2025"}
+2025-08-06 08:14:35 - Input decodificato: Array
+(
+    [username] => admin
+    [password] => mcl2025
+)
+
+2025-08-06 08:14:35 - Username: 'admin', Password: 'mcl2025'
+2025-08-06 08:14:35 - Utente dal DB: Array
+(
+    [id] => 1
+    [username] => admin
+    [password] => $2y$10$7qrwyGyyp6pmAzz2c16nfespAymfcxdwuccuFnbKYZ/uY/Ix9YSMe
+)
+
+2025-08-06 08:14:35 - Password check: OK
+2025-08-06 08:14:35 - Login OK
+2025-08-06 08:14:49 - Avvio script
+2025-08-06 08:14:49 - Connessione DB OK
+2025-08-06 08:14:49 - Tabelle esistono
+2025-08-06 08:14:49 - Azione richiesta: add_evento
+2025-08-06 08:18:27 - Avvio script
+2025-08-06 08:18:27 - Connessione DB OK
+2025-08-06 08:18:27 - Tabelle esistono
+2025-08-06 08:18:27 - Azione richiesta: check_auth
+2025-08-06 08:18:27 - Check auth: NOT LOGGED
+2025-08-06 08:18:27 - Avvio script
+2025-08-06 08:18:27 - Connessione DB OK
+2025-08-06 08:18:27 - Tabelle esistono
+2025-08-06 08:18:27 - Azione richiesta: get_eventi
+2025-08-06 08:18:28 - Avvio script
+2025-08-06 08:18:28 - Connessione DB OK
+2025-08-06 08:18:28 - Tabelle esistono
+2025-08-06 08:18:28 - Azione richiesta: get_eventi
+2025-08-06 08:18:31 - Avvio script
+2025-08-06 08:18:31 - Connessione DB OK
+2025-08-06 08:18:31 - Tabelle esistono
+2025-08-06 08:18:31 - Azione richiesta: login
+2025-08-06 08:18:31 - Processo di login
+2025-08-06 08:18:31 - Raw input: {"username":"admin","password":"mcl2025"}
+2025-08-06 08:18:31 - Input decodificato: Array
+(
+    [username] => admin
+    [password] => mcl2025
+)
+
+2025-08-06 08:18:31 - Username: 'admin', Password: 'mcl2025'
+2025-08-06 08:18:31 - Utente dal DB: Array
+(
+    [id] => 1
+    [username] => admin
+    [password] => $2y$10$7qrwyGyyp6pmAzz2c16nfespAymfcxdwuccuFnbKYZ/uY/Ix9YSMe
+)
+
+2025-08-06 08:18:31 - Password check: OK
+2025-08-06 08:18:31 - Login OK
+2025-08-06 08:18:37 - Avvio script
+2025-08-06 08:18:37 - Connessione DB OK
+2025-08-06 08:18:37 - Tabelle esistono
+2025-08-06 08:18:37 - Azione richiesta: add_evento
+2025-08-06 08:18:37 - Add evento input: {"titolo":"asxas","descrizione":"zxcasc","data_evento":"","prezzo":""}
+2025-08-06 08:18:37 - Dati evento: titolo='asxas', descrizione='zxcasc', data='', prezzo=''
+2025-08-06 08:18:37 - Evento aggiunto con successo
+2025-08-06 08:18:37 - Avvio script
+2025-08-06 08:18:37 - Connessione DB OK
+2025-08-06 08:18:37 - Tabelle esistono
+2025-08-06 08:18:37 - Azione richiesta: get_eventi
+2025-08-06 08:18:45 - Avvio script
+2025-08-06 08:18:45 - Connessione DB OK
+2025-08-06 08:18:45 - Tabelle esistono
+2025-08-06 08:18:45 - Azione richiesta: add_evento
+2025-08-06 08:18:45 - Add evento input: {"titolo":" csdcvds","descrizione":"xc xc c c ","data_evento":"","prezzo":""}
+2025-08-06 08:18:45 - Dati evento: titolo=' csdcvds', descrizione='xc xc c c ', data='', prezzo=''
+2025-08-06 08:18:45 - Evento aggiunto con successo
+2025-08-06 08:18:45 - Avvio script
+2025-08-06 08:18:45 - Connessione DB OK
+2025-08-06 08:18:45 - Tabelle esistono
+2025-08-06 08:18:45 - Azione richiesta: get_eventi
+2025-08-06 08:18:49 - Avvio script
+2025-08-06 08:18:49 - Connessione DB OK
+2025-08-06 08:18:49 - Tabelle esistono
+2025-08-06 08:18:49 - Azione richiesta: check_auth
+2025-08-06 08:18:49 - Check auth: LOGGED IN
+2025-08-06 08:18:49 - Avvio script
+2025-08-06 08:18:49 - Connessione DB OK
+2025-08-06 08:18:49 - Tabelle esistono
+2025-08-06 08:18:49 - Azione richiesta: get_eventi
+2025-08-06 08:18:50 - Avvio script
+2025-08-06 08:18:50 - Connessione DB OK
+2025-08-06 08:18:50 - Tabelle esistono
+2025-08-06 08:18:50 - Azione richiesta: get_eventi
+2025-08-06 08:19:01 - Avvio script
+2025-08-06 08:19:01 - Connessione DB OK
+2025-08-06 08:19:01 - Tabelle esistono
+2025-08-06 08:19:01 - Azione richiesta: delete_evento
+2025-08-06 08:19:01 - Delete evento input: {"id":3}
+2025-08-06 08:19:01 - ID evento da eliminare: '3'
+2025-08-06 08:19:01 - Evento eliminato con successo
+2025-08-06 08:19:01 - Avvio script
+2025-08-06 08:19:01 - Connessione DB OK
+2025-08-06 08:19:01 - Tabelle esistono
+2025-08-06 08:19:01 - Azione richiesta: get_eventi
+2025-08-06 08:19:04 - Avvio script
+2025-08-06 08:19:04 - Connessione DB OK
+2025-08-06 08:19:04 - Tabelle esistono
+2025-08-06 08:19:04 - Azione richiesta: delete_evento
+2025-08-06 08:19:04 - Delete evento input: {"id":2}
+2025-08-06 08:19:04 - ID evento da eliminare: '2'
+2025-08-06 08:19:04 - Evento eliminato con successo
+2025-08-06 08:19:04 - Avvio script
+2025-08-06 08:19:04 - Connessione DB OK
+2025-08-06 08:19:04 - Tabelle esistono
+2025-08-06 08:19:04 - Azione richiesta: get_eventi
