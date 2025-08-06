@@ -28,17 +28,20 @@ const root = Vue.createApp({
         showPage(page) {
             this.currentPage = page;
         },
-                condividiFacebook(evento) {
-            const url = 'https://sebaminotti.github.io/mclvoghera/'; // URL della tua webapp
+              condividiFacebook(evento) {
             const titolo = evento.titolo;
-            const descrizione = evento.descrizione.length > 200 ? 
-                evento.descrizione.substring(0, 200) + '...' : 
-                evento.descrizione;
+            const descrizione = evento.descrizione;
             
-            const testoCondivisione = `${titolo}\n\n${descrizione}\n\nMCL Voghera - Circolo Giovanni XXIII`;
+            // Testo completo dell'evento da condividere
+            const testoEvento = `🎉 ${titolo}
+
+${descrizione}
+
+📍 MCL Voghera - Circolo Giovanni XXIII
+📞 Per info: 0383-42980`;
             
-            // URL di condivisione Facebook
-            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(testoCondivisione)}`;
+            // URL di condivisione Facebook - condivide solo il testo senza link
+            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?quote=${encodeURIComponent(testoEvento)}`;
             
             // Apre il popup di condivisione
             window.open(facebookUrl, 'facebook-share', 'width=600,height=400,scrollbars=yes,resizable=yes');
